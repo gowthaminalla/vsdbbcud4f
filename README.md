@@ -20,9 +20,14 @@ Bi-directional Buffer with Non-inverting CMOS input and gated Pull-down and Pull
 ## TYPICAL PERFORMANCE CHARACTERISTICS
 ## specifications of the IP
  ![image](https://user-images.githubusercontent.com/66250226/85953985-de591d00-b991-11ea-9d62-3d8c232a24f3.png)
+ 
 ## pre-layout characterstics 
 ## LT-Spice circuit diagram
 ![image](https://user-images.githubusercontent.com/66250226/85953888-46f3ca00-b991-11ea-92dd-3346e886a278.png)
+## LTspice output graph for a simulation time of 100ms
+![image](https://user-images.githubusercontent.com/66250226/87010568-5b7f6000-c1e4-11ea-9a0e-bc08eb88029d.png)
+## ngspice plots
+![image](https://user-images.githubusercontent.com/66250226/87011129-23c4e800-c1e5-11ea-95fa-786a7f261c8d.png)
 
 ## post-layout characterstics
 ### cmos magic layout
