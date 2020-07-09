@@ -20,10 +20,7 @@ Bi-directional Buffer with Non-inverting CMOS input and gated Pull-down and Pull
 5) pin PDEN is used to pull-down the input when it is floating state
 6) pin Y is the output
 7) pin PO is the output of the PAD cell
-## TYPICAL PERFORMANCE CHARACTERISTICS
-## specifications of the IP
- ![image](https://user-images.githubusercontent.com/66250226/85953985-de591d00-b991-11ea-9d62-3d8c232a24f3.png)
- 
+## TYPICAL PERFORMANCE CHARACTERISTICS 
 ## pre-layout characterstics 
 ## LT-Spice circuit diagram
 ![image](https://user-images.githubusercontent.com/66250226/85953888-46f3ca00-b991-11ea-92dd-3346e886a278.png)
