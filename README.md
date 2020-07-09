@@ -20,46 +20,80 @@ Bi-directional Buffer with Non-inverting CMOS input and gated Pull-down and Pull
 ## TYPICAL PERFORMANCE CHARACTERISTICS
 ## specifications of the IP
  ![image](https://user-images.githubusercontent.com/66250226/85953985-de591d00-b991-11ea-9d62-3d8c232a24f3.png)
+## pre-layout characterstics 
 ## LT-Spice circuit diagram
 ![image](https://user-images.githubusercontent.com/66250226/85953888-46f3ca00-b991-11ea-92dd-3346e886a278.png)
+
+## post-layout characterstics
+### cmos magic layout
+![image](https://user-images.githubusercontent.com/66250226/87004407-fa06c380-c1da-11ea-8475-0d9a1c4a84ed.png)
+### ngspice plots for cmos layout
+```ngspice cmos.sp```
+![image](https://user-images.githubusercontent.com/66250226/87004613-536ef280-c1db-11ea-8d5d-714cb6dbfd04.png)
+### nand gate magic layout
+![image](https://user-images.githubusercontent.com/66250226/87004724-87e2ae80-c1db-11ea-9e7b-f6c49fc1bd07.png)
+### ngspice plots for nand layout
+```ngspice nand.sp```
+![image](https://user-images.githubusercontent.com/66250226/87004974-ead44580-c1db-11ea-93b5-777616588d46.png)
+### tristate magic layout
+![image](https://user-images.githubusercontent.com/66250226/87005198-46063800-c1dc-11ea-9007-71fe5739026d.png)
+### ngspice plots for tristate layout
+```ngspice tristate.sp```
+![image](https://user-images.githubusercontent.com/66250226/87006607-97172b80-c1de-11ea-9d03-febcff53ddda.png)
+### gpio magic layout
+![image](https://user-images.githubusercontent.com/66250226/87006818-ea897980-c1de-11ea-82a2-05d20b557f97.png)
+### ngspice plots for gpio layout
+```ngspice gpio.sp```
+![image](https://user-images.githubusercontent.com/66250226/87007292-a34fb880-c1df-11ea-837e-4352b068dcce.png)
+
+
 ## FUTURE WORK
 
 # IP USAGE
+
 ## TOOLS REQUIRED TO USE THE IP
-1) LTSPICE
+
+# For pre-layout simulation
 ## steps to install ltspice for windows10
 1) Download LTspice from here [ltspice_download](https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html#)
 2) Now click on the download button for windows.
 3) Now click on the application `ltspice` from your downloads and accept and continue. 
 4) The simulator is installed and is ready to use.
-
-## Installation steps for Ubuntu
-Follow the steps given below to install Ltspice simulator in Ubuntu.
-1) LINUX Users have to install WINE from [here](https://wiki.winehq.org/Download) as LTSpice is not directly supported.
-2) Similar steps are followed as mentioned for windows to download LTspice setup.
-3) Right click on the downloaded setup file from your downloads and select the option Open With Wine Windows Program Loader.
-4) After this, the basic installation steps are followed.
-
-## NGspice installation 
-ngspice is the open source simulator. 
+5) download the ```ltspice``` zip file from the repository
+6) open the circuit with a file .asc file extension
+7) goto ```view->spice netlsit``` and copy the content in there
+8) open a new text file and paste the spice netlsit and add the command lines according to ngspice
+9) save the text file with a .cir extension
 
 ## Ngspice installation for windows 10
-
+ngspice is the open source simulator.
 Follow the steps below to install ngspice on windows10:
-
 1) Click on [this](http://ngspice.sourceforge.net/download.html) to download ngspice software. 
 2) Click on the download button.
 3) You are directed to the download page. Then follow the installation steps.
 4) The software is now donloaded and ready to use.
+5) open ```ngspice->spice64->bin``` and save the .cir file in this location also add the model files in the same location
+6) now open ngspice application and type filename.cir to get the corresponding output graphs
 
-## Ngspice installation for ubuntu
-click on Copy button to copy the command and paste into your command line terminal using built-in APT package manager.
-1) Run update command to update package repositories and get latest package information.
-`sudo apt-get update -y`
-2) Run the install command with -y flag to quickly install the packages and dependencies.
-`sudo apt-get install -y ngspice`
-3) Check the system logs to confirm that there are no related errors. 
-Note: `-y` flag means to assume yes 
+# For post layout simulation
+## MAGIC installation and usage in linux mint
+1) goto ```administartion->synaptic package manager->search->magic```
+2) mark it for installation and proceed with the next steps
+3) once the installation is completed close the synaptic manager
+4) download the above files from repository and unzip them
+5) open the terminal in the folder and tpye ```magic -T osu180nm.tech filename.mag``` for example if we want to open the gpio layout type ```magic -T osu180nm.tech gpio.mag```
+6) This opens the layout
+7) now goto the corresponding tckon dialoge box and type ```extract all``` which generates a netlist with the extension ext now to convert into spice type ```ext2spice```
+8) a spice netlsit is generated open it and add the pmos and nmos model files and some lines to run it through ngspice
+9) save the files with a .sp extension
+
+## Ngspice installation and usage for linux mint
+1) goto ```administration->synaptic package manager->search->ngspice```
+2) mark it for installation and proceed with further steps
+3) open in terminal->ngspice and check if it is working to come out of ngspice type ```exit``` in terminal
+4) type ```ngspice filename.sp``` and check the output graphs
+
+
 
 ## STEPS TO CLONE IP
 
