@@ -67,13 +67,17 @@ Bi-directional Buffer with Non-inverting CMOS input and gated Pull-down and Pull
 
 
 ## FUTURE WORK
+ISSUES:
+1) performance of the pre-layout simulation is limited to milliseconds simulation time but as we require all the plots in nanometers since we are using all in nm technology
+2) PUEN and PDEN are not included in post layout simulation yet
+##### these issues are to be updated in further releases 
 
 # IP USAGE
 
 ## TOOLS REQUIRED TO USE THE IP
 
 # For pre-layout simulation
-## steps to install ltspice for windows10
+## steps to install and use ltspice for windows10
 1) Download LTspice from here [ltspice_download](https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html#)
 2) Now click on the download button for windows.
 3) Now click on the application `ltspice` from your downloads and accept and continue. 
@@ -84,7 +88,7 @@ Bi-directional Buffer with Non-inverting CMOS input and gated Pull-down and Pull
 8) open a new text file and paste the spice netlsit and add the command lines according to ngspice
 9) save the text file with a .cir extension
 
-## Ngspice installation for windows 10
+## Ngspice installation and usage for windows 10
 ngspice is the open source simulator.
 Follow the steps below to install ngspice on windows10:
 1) Click on [this](http://ngspice.sourceforge.net/download.html) to download ngspice software. 
