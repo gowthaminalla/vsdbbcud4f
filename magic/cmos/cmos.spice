@@ -1,0 +1,8 @@
+* SPICE3 file created from cmos.ext - technology: scmos
+
+.option scale=0.1u
+
+M1000 vout vin VDD w_n17_0# pfet w=9 l=3
++  ad=72 pd=34 as=72 ps=34
+M1001 vout vin GND w_n1073741817_n1073741817# nfet w=10 l=3
++  ad=80 pd=36 as=80 ps=36

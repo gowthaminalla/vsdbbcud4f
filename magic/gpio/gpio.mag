@@ -1,0 +1,39 @@
+magic
+tech scmos
+timestamp 1594237197
+<< metal1 >>
+rect -10 58 -7 64
+rect 122 48 136 52
+rect 156 49 174 53
+rect 194 49 203 53
+rect 198 24 203 49
+rect 158 19 203 24
+rect 158 -27 165 19
+rect 158 -32 180 -27
+rect 213 -31 215 -27
+rect 178 -40 180 -35
+<< metal2 >>
+rect 42 94 45 99
+use tristate  tristate_0
+timestamp 1594235502
+transform 1 0 80 0 1 92
+box -87 -89 42 32
+use cmos  cmos_0
+timestamp 1594230844
+transform 1 0 143 0 1 56
+box -17 -31 15 22
+use cmos  cmos_1
+timestamp 1594230844
+transform 1 0 181 0 1 56
+box -17 -31 15 22
+use nand  nand_0
+timestamp 1594232584
+transform 1 0 193 0 1 -15
+box -24 -41 28 30
+<< labels >>
+rlabel metal1 165 -32 165 -27 1 Y
+rlabel metal1 178 -40 178 -35 1 PI
+rlabel metal1 215 -31 215 -27 1 PO
+rlabel metal2 42 94 42 99 1 A
+rlabel metal1 -10 58 -10 64 3 EN
+<< end >>
