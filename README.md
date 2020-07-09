@@ -118,6 +118,5 @@ Follow the steps below to install ngspice on windows10:
 
 
 
-## STEPS TO CLONE IP
 
 
