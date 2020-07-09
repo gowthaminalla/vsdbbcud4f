@@ -9,6 +9,9 @@ Bi-directional Buffer with Non-inverting CMOS input and gated Pull-down and Pull
 4) Both the buffers are connected in a bidirectional fashion which allows the data to flow in either of the direction
 ## SYMBOL
 ![image](https://user-images.githubusercontent.com/66250226/86907415-9c1ea100-c132-11ea-8f2f-0c5a9970baf4.png)
+## Block diagram
+![image](https://user-images.githubusercontent.com/66250226/85789018-80d38f00-b74b-11ea-9124-9c9f1f7b236f.png)
+
 ## PIN DESCRIPTIONS
 1) pin A is where the input is given
 2) pin EN is the enable pin which is used to determine the mode of the circuit (input/output)
@@ -68,7 +71,7 @@ Bi-directional Buffer with Non-inverting CMOS input and gated Pull-down and Pull
 
 ## FUTURE WORK
 ISSUES:
-1) performance of the pre-layout simulation is limited to milliseconds simulation time but as we require all the plots in nanometers since we are using all in nm technology
+1) performance of the pre-layout simulation is limited to milliseconds simulation time should update it to get all the plots in nanoseconds since we are using everything in 180nm technology
 2) PUEN and PDEN are not included in post layout simulation yet
 ##### these issues are to be updated in further releases 
 
