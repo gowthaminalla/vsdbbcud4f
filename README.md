@@ -28,22 +28,30 @@ Bi-directional Buffer with Non-inverting CMOS input and gated Pull-down and Pull
 ### cmos magic layout
 ![image](https://user-images.githubusercontent.com/66250226/87004407-fa06c380-c1da-11ea-8475-0d9a1c4a84ed.png)
 ### ngspice plots for cmos layout
+
 ```ngspice cmos.sp```
+
 ![image](https://user-images.githubusercontent.com/66250226/87004613-536ef280-c1db-11ea-8d5d-714cb6dbfd04.png)
 ### nand gate magic layout
 ![image](https://user-images.githubusercontent.com/66250226/87004724-87e2ae80-c1db-11ea-9e7b-f6c49fc1bd07.png)
 ### ngspice plots for nand layout
+
 ```ngspice nand.sp```
+
 ![image](https://user-images.githubusercontent.com/66250226/87004974-ead44580-c1db-11ea-93b5-777616588d46.png)
 ### tristate magic layout
 ![image](https://user-images.githubusercontent.com/66250226/87005198-46063800-c1dc-11ea-9007-71fe5739026d.png)
 ### ngspice plots for tristate layout
+
 ```ngspice tristate.sp```
+
 ![image](https://user-images.githubusercontent.com/66250226/87006607-97172b80-c1de-11ea-9d03-febcff53ddda.png)
 ### gpio magic layout
 ![image](https://user-images.githubusercontent.com/66250226/87006818-ea897980-c1de-11ea-82a2-05d20b557f97.png)
 ### ngspice plots for gpio layout
+
 ```ngspice gpio.sp```
+
 ![image](https://user-images.githubusercontent.com/66250226/87007292-a34fb880-c1df-11ea-837e-4352b068dcce.png)
 
 
