@@ -12,11 +12,11 @@ Bi-directional Buffer with Non-inverting CMOS input and gated Pull-down and Pull
 ## PIN DESCRIPTIONS
 1) pin A is where the input is given
 2) pin EN is the enable pin which is used to determine the mode of the circuit (input/output)
-3) pin PO is one of the NAND gate inputs
+3) pin PI is the input to the PAD cell
 4) pin PUEN is used to pull-up the input when it is in floating state
 5) pin PDEN is used to pull-down the input when it is floating state
 6) pin Y is the output
-7) pin PO is the output of the NAND gate where Y and PO are the inputs.
+7) pin PO is the output of the PAD cell
 ## TYPICAL PERFORMANCE CHARACTERISTICS
 ## specifications of the IP
  ![image](https://user-images.githubusercontent.com/66250226/85953985-de591d00-b991-11ea-9d62-3d8c232a24f3.png)
@@ -117,6 +117,9 @@ Follow the steps below to install ngspice on windows10:
 4) type ```ngspice filename.sp``` and check the output graphs
 
 
-
-
+# Contact information:
+1) Nalla Gowthami, Electronics and instrumentation engineering, NIT Rourkela, gowthaminalla1821@gmail.com
+2) Kunal Gosh Director, Vsd Corp Pvt.Ltd, kunalpgosh@gmail.com
+3) Phillip Guhring, Software architect at Libresilicon Association pg@futureware.at
+4) Dr.Gaurav Trivedi Co-principal investigator, EICT academy, and associative proffessor, EEE depatement, IIT Guwahati, trivedi@iitg.ac.in
 
