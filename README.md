@@ -24,8 +24,10 @@ Bi-directional Buffer with Non-inverting CMOS input and gated Pull-down and Pull
 ## pre-layout characterstics 
 ## LT-Spice circuit diagram
 ![image](https://user-images.githubusercontent.com/66250226/85953888-46f3ca00-b991-11ea-92dd-3346e886a278.png)
+
 ## LTspice output graph for a simulation time of 100ms
 ![image](https://user-images.githubusercontent.com/66250226/87010568-5b7f6000-c1e4-11ea-9a0e-bc08eb88029d.png)
+
 ## ngspice plots
 ![image](https://user-images.githubusercontent.com/66250226/87011129-23c4e800-c1e5-11ea-95fa-786a7f261c8d.png)
 
@@ -44,15 +46,19 @@ Bi-directional Buffer with Non-inverting CMOS input and gated Pull-down and Pull
 ```ngspice nand.sp```
 
 ![image](https://user-images.githubusercontent.com/66250226/87004974-ead44580-c1db-11ea-93b5-777616588d46.png)
+
 ### tristate magic layout
 ![image](https://user-images.githubusercontent.com/66250226/87005198-46063800-c1dc-11ea-9007-71fe5739026d.png)
+
 ### ngspice plots for tristate layout
 
 ```ngspice tristate.sp```
 
 ![image](https://user-images.githubusercontent.com/66250226/87006607-97172b80-c1de-11ea-9d03-febcff53ddda.png)
+
 ### gpio magic layout
 ![image](https://user-images.githubusercontent.com/66250226/87006818-ea897980-c1de-11ea-82a2-05d20b557f97.png)
+
 ### ngspice plots for gpio layout
 
 ```ngspice gpio.sp```
