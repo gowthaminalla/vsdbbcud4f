@@ -99,6 +99,7 @@ Follow the steps below to install ngspice on windows10:
 6) now open ngspice application and type filename.cir to get the corresponding output graphs
 
 # For post layout simulation
+
 ## MAGIC installation and usage in linux mint
 1) goto ```administartion->synaptic package manager->search->magic```
 2) mark it for installation and proceed with the next steps
@@ -110,12 +111,63 @@ Follow the steps below to install ngspice on windows10:
 8) a spice netlsit is generated open it and add the pmos and nmos model files and some lines to run it through ngspice
 9) save the files with a .sp extension
 
+## Steps to install ```Magic VLSI``` on LINUX
+1. Download the [magic.sh file](https://drive.google.com/file/d/1F0y1xuYWIgeYEpzKnGlaCQH3urdSFc4E/view)
+
+2. Copy paste the below commands one after another
+``` 
+cd Downloads/
+chmod +x magic.sh
+./magic.sh
+
+```
+ Magic tool will be opened with minimum technology file by default. 
+ Follow below steps to open magic with osu180nm tech file.
+ 
+3. Download the ```osu180nm.tech``` file from the uploaded files. Copy and paste the entire content in ```Text Editor``` and save it as ```osu180nm.tech```.
+
+4. Open the Terminal and copy, paste the commands mentioned below.
+```
+sudo cp osu180nm.tech /usr/local/lib/magic/sys/
+cd /usr/local/lib/magic/sys/
+ls 
+cd
+clear
+```
+5. You have successfully added osu180nm.tech file!
+
+6. Just open the terminal and type ```magic -T osu180nm.tech filename.mag``` to begin layout.
+
 ## Ngspice installation and usage for linux mint
 1) goto ```administration->synaptic package manager->search->ngspice```
 2) mark it for installation and proceed with further steps
 3) open in terminal->ngspice and check if it is working to come out of ngspice type ```exit``` in terminal
 4) type ```ngspice filename.sp``` and check the output graphs
 
+## Steps to install ``` LTSpice XVII ``` on LINUX
+1. It's not directly supported, so we need to download ```WineHQ```. Wine is a linux software that creates windows environment and allows you to run various windows programs.
+2. Copy paste the commands mentioned below one after the other in the terminal for downloading and installing.
+``` 
+sudo dpkg --add-architecture i386
+wget -O - https://dl.winehq.org/wine-builds/winehq.key | sudo apt-key add -
+sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ focal main'
+sudo apt update
+sudo apt install --install-recommends winehq-stable
+```
+3. Download [LTSpice](https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html).
+4. Click on ```Download for Windows```.
+5. Install it by clicking on ``` -> next ```.
+6. After installing , click on open with ```WineHQ windows program loader```.
+> ```LTSpice``` is now installed and you can design the circuit```
+
+# Steps to clone the IP onto UNIX based systems
+Cloning a github repository creates a local copy of a remote repo and this allows us to make any changes to the files locally without affecting the main repository. To clone the IP onto your system copy paste the commands given below.
+
+```
+$  sudo apt install -y git
+$  git clone https://github.com/gowthaminalla/vsdbbcud4f.git
+$  cd vsdbbcud4f/magic
+```
 
 # Contact information:
 1) Nalla Gowthami, Electronics and instrumentation engineering, NIT Rourkela, gowthaminalla1821@gmail.com
