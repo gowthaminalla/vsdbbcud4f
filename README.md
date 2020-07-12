@@ -38,8 +38,6 @@ Bi-directional Buffer with Non-inverting CMOS input and gated Pull-down and Pull
 
 ```ngspice cmos.sp```
 
-![image](https://user-images.githubusercontent.com/66250226/87004613-536ef280-c1db-11ea-8d5d-714cb6dbfd04.png)
-
 ![image](https://user-images.githubusercontent.com/66250226/87230630-f20f7500-c3ce-11ea-80f2-c0a62f74b778.png)
 
 
@@ -48,8 +46,6 @@ Bi-directional Buffer with Non-inverting CMOS input and gated Pull-down and Pull
 ### ngspice plots for nand layout
 
 ```ngspice nand.sp```
-
-![image](https://user-images.githubusercontent.com/66250226/87004974-ead44580-c1db-11ea-93b5-777616588d46.png)
 
 ![image](https://user-images.githubusercontent.com/66250226/87230869-37807200-c3d0-11ea-9817-fbef77ce1573.png)
 
@@ -63,8 +59,6 @@ Bi-directional Buffer with Non-inverting CMOS input and gated Pull-down and Pull
 
 ```ngspice tristate.sp```
 
-![image](https://user-images.githubusercontent.com/66250226/87006607-97172b80-c1de-11ea-9d03-febcff53ddda.png)
-
 ![image](https://user-images.githubusercontent.com/66250226/87230944-b5dd1400-c3d0-11ea-8073-45045c725236.png)
 
 ![image](https://user-images.githubusercontent.com/66250226/87231027-4d426700-c3d1-11ea-9ef2-73c4fb5163a5.png)
@@ -76,8 +70,11 @@ Bi-directional Buffer with Non-inverting CMOS input and gated Pull-down and Pull
 
 ```ngspice gpio.sp```
 
-![image](https://user-images.githubusercontent.com/66250226/87007292-a34fb880-c1df-11ea-837e-4352b068dcce.png)
+![image](https://user-images.githubusercontent.com/66250226/87238452-41ca5c80-c420-11ea-896a-c10cbd852400.png)
 
+![image](https://user-images.githubusercontent.com/66250226/87238489-9a99f500-c420-11ea-971f-2abb0bea69e8.png)
+
+![image](https://user-images.githubusercontent.com/66250226/87238514-db920980-c420-11ea-9332-0810a9aedd7c.png)
 
 ## FUTURE WORK
 ISSUES:
