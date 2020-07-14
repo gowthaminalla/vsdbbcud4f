@@ -21,13 +21,19 @@ Bi-directional Buffer with Non-inverting CMOS input and gated Pull-down and Pull
 6) pin Y is the output
 7) pin PO is the output of the PAD cell
 ## TYPICAL PERFORMANCE CHARACTERISTICS 
+## expected characteristics 
+
+according to https://www.vlsisystemdesign.com/ip/
+
+![image](https://user-images.githubusercontent.com/66250226/87389977-7af00180-c5c5-11ea-8f2e-d3f598057e9e.png)
+
 ## pre-layout characterstics 
 ## LT-Spice circuit diagram
 ![image](https://user-images.githubusercontent.com/66250226/85953888-46f3ca00-b991-11ea-92dd-3346e886a278.png)
 
 ## LTspice output graph for a simulation time of 100ms
 
-characterstics of inputs and outputs of GPIO circuit are shown in the plot.```Inputs:A,EN,PUEN,PDEN,PI``` ```Outputs:Y,PO```
+characterstics of inputs and outputs of GPIO circuit are shown in the plot.```Inputs:A,EN,PUEN,PDEN,PI``` ```Outputs:Y,PO``` according to the truth table in https://www.vlsisystemdesign.com/ip/
 
 ![image](https://user-images.githubusercontent.com/66250226/87010568-5b7f6000-c1e4-11ea-9a0e-bc08eb88029d.png)
 
