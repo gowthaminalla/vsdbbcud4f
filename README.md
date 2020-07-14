@@ -26,9 +26,13 @@ Bi-directional Buffer with Non-inverting CMOS input and gated Pull-down and Pull
 ![image](https://user-images.githubusercontent.com/66250226/85953888-46f3ca00-b991-11ea-92dd-3346e886a278.png)
 
 ## LTspice output graph for a simulation time of 100ms
+characterstics of inputs and outputs of GPIO circuit are shown in the plot.```Inputs:A,EN,PUEN,PDEN,PI``` ```Outputs:Y,PO```
+
 ![image](https://user-images.githubusercontent.com/66250226/87010568-5b7f6000-c1e4-11ea-9a0e-bc08eb88029d.png)
 
 ## ngspice plots
+ngspice plots for GPIO LTspice circuit ```EN,A``` and ```PI,Y,PO```
+
 ![image](https://user-images.githubusercontent.com/66250226/87011129-23c4e800-c1e5-11ea-95fa-786a7f261c8d.png)
 
 ## post-layout characterstics
@@ -37,6 +41,7 @@ Bi-directional Buffer with Non-inverting CMOS input and gated Pull-down and Pull
 ### ngspice plots for cmos layout
 
 ```ngspice cmos.sp```
+CMOS characterstics in NGspice plot
 
 ![image](https://user-images.githubusercontent.com/66250226/87230630-f20f7500-c3ce-11ea-80f2-c0a62f74b778.png)
 
@@ -47,8 +52,10 @@ Bi-directional Buffer with Non-inverting CMOS input and gated Pull-down and Pull
 
 ```ngspice nand.sp```
 
+NAND inputs NGspice plots ```A and B```
 ![image](https://user-images.githubusercontent.com/66250226/87230869-37807200-c3d0-11ea-9817-fbef77ce1573.png)
 
+NAND output NGspice plot 
 ![image](https://user-images.githubusercontent.com/66250226/87230883-54b54080-c3d0-11ea-9171-868392e43af8.png)
 
 
@@ -58,8 +65,11 @@ Bi-directional Buffer with Non-inverting CMOS input and gated Pull-down and Pull
 ### ngspice plots for tristate layout
 
 ```ngspice tristate.sp```
+NGspice plots for tristate buffer inputs ```A and EN```
 
 ![image](https://user-images.githubusercontent.com/66250226/87230944-b5dd1400-c3d0-11ea-8073-45045c725236.png)
+
+Ngspice plots for tristate buffer output
 
 ![image](https://user-images.githubusercontent.com/66250226/87231027-4d426700-c3d1-11ea-9ef2-73c4fb5163a5.png)
 
@@ -69,10 +79,15 @@ Bi-directional Buffer with Non-inverting CMOS input and gated Pull-down and Pull
 ### ngspice plots for gpio layout
 
 ```ngspice gpio.sp```
+Ngspice plot for ```PO``` post-layout
 
 ![image](https://user-images.githubusercontent.com/66250226/87238452-41ca5c80-c420-11ea-896a-c10cbd852400.png)
 
+Ngspice plot for ```PI and Y``` post-layout
+
 ![image](https://user-images.githubusercontent.com/66250226/87238489-9a99f500-c420-11ea-971f-2abb0bea69e8.png)
+
+Ngspice plot for ```A and EN``` post-layout
 
 ![image](https://user-images.githubusercontent.com/66250226/87238514-db920980-c420-11ea-9332-0810a9aedd7c.png)
 
