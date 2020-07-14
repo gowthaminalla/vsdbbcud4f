@@ -33,7 +33,7 @@ according to https://www.vlsisystemdesign.com/ip/
 
 ## LTspice output graph for a simulation time of 100ms
 
-characterstics of inputs and outputs of GPIO circuit are shown in the plot.```Inputs:A,EN,PUEN,PDEN,PI``` ```Outputs:Y,PO``` according to the truth table in https://www.vlsisystemdesign.com/ip/
+characterstics of inputs and outputs of GPIO circuit are shown in the plot.```Inputs:A,EN,PUEN,PDEN,PI``` ```Outputs:Y,PO``` when the enable is 0 output Y is same as the input A when enable is 1 output varies according to the truth table in https://www.vlsisystemdesign.com/ip/ for any value of input A
 
 ![image](https://user-images.githubusercontent.com/66250226/87010568-5b7f6000-c1e4-11ea-9a0e-bc08eb88029d.png)
 
